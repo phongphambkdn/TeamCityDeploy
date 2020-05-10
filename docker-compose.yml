@@ -5,6 +5,6 @@ services:
         build: 
             context: .
             dockerfile: Dockerfile
-        image: demo-image
+        image: team-city-deploy-image
         ports:
             - "8080:80"
