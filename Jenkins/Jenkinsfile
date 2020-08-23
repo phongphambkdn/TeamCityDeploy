@@ -16,6 +16,11 @@ pipeline {
                 bat './Jenkins/Push/push.bat'
             }
         }
+        stage('Clean') {
+            steps {
+                bat './Jenkins/Clean/clean.bat'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'

@@ -4,8 +4,8 @@ echo "********************"
 echo "** Pushing image ***"
 echo "********************"
 
-IMAGE = "demo-image"
-BUILD_TAG = "latest"
+IMAGE="demo-image"
+BUILD_TAG="latest"
 
 echo "** Logging in ***"
 docker login -u phongphambkdn -p $PASS
