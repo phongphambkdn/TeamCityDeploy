@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat './Jenkins/build.bat'
+                bat './Jenkins/Build/build.bat'
             }
         }
         stage('Test') {
