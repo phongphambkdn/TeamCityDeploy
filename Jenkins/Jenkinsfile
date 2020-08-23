@@ -7,9 +7,9 @@ pipeline {
                 bat './Jenkins/Build/build.bat'
             }
         }
-        stage('Test') {
+        stage('Push') {
             steps {
-                echo 'Testing..'
+                bat './Jenkins/Push/push.bat'
             }
         }
         stage('Deploy') {
