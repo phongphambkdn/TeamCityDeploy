@@ -7,7 +7,7 @@ echo "********************"
 SET IMAGE="demo-image"
 
 echo "** Logging in ***"
-docker login -u phongphambkdn -p %PASS%
+docker login -u phongphambkdn -p %DOCKER_HUB_PASS%
 echo "*** Tagging image ***"
 docker tag %IMAGE%:latest phongphambkdn/%IMAGE%:latest
 echo "*** Pushing image ***"
