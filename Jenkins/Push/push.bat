@@ -1,10 +1,10 @@
-#!/bin/bash
+@ECHO OFF
 
 echo "********************"
 echo "** Pushing image ***"
 echo "********************"
 
-IMAGE="demo-image"
+SET IMAGE="demo-image"
 
 echo "** Logging in ***"
 docker login -u phongphambkdn -p %PASS%
