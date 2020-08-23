@@ -4,7 +4,7 @@ echo "*****************************************"
 echo "****** Building the image ***************"
 echo "*****************************************"
 
-docker-compose -f Jenkins/Build/docker-compose.yml build --no-cache
+docker-compose -f Jenkins/1-Build/docker-compose.yml build --no-cache
 
 echo "*****************************************"
 echo "****** Done build the image *************"

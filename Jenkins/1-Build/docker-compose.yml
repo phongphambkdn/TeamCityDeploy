@@ -4,5 +4,5 @@ services:
     api:
         build: 
             context: ../../
-            dockerfile: Jenkins/Build/Dockerfile
+            dockerfile: Jenkins/1-Build/Dockerfile
         image: demo-image
