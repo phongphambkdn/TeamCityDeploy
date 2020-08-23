@@ -8,17 +8,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat './Jenkins/Build/build.bat'
+                bat './Jenkins/1-Build/build.bat'
             }
         }
         stage('Push') {
             steps {
-                bat './Jenkins/Push/push.bat'
+                bat './Jenkins/2-Push/push.bat'
             }
         }
         stage('Clean') {
             steps {
-                bat './Jenkins/Clean/clean.bat'
+                bat './Jenkins/3-Clean/clean.bat'
             }
         }
         stage('Deploy') {
