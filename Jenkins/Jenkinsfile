@@ -6,6 +6,11 @@ pipeline {
     }
 
     stages {
+        stage('Pre') {
+            steps {
+                bat './Jenkins/0-Pre/pre.bat'
+            }
+        }
         stage('Build') {
             steps {
                 bat './Jenkins/1-Build/build.bat'
@@ -23,7 +28,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat './Jenkins/4-Deploy/deploy.bat'
             }
         }
     }
